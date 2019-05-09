@@ -1,0 +1,9 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 4
+      arrivalRate: 10
+scenarios:
+  - flow:
+    - get:
+        url: "/{{$randomNumber(0,9999999)}}"
